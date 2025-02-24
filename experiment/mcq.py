@@ -1,3 +1,4 @@
+'''
 import os
 import json
 import pandas as pd
@@ -49,6 +50,7 @@ Example:
 MCQ: What is the scientific study of life called? | Choices: a: Physics | b: Chemistry | c: Biology | d: Geology | Correct: c
 """
 
+
 # Loop to generate each question individually
 for i in range(NUM_QUESTIONS):
     prompt = single_q_prompt.format(text=truncated_text)
@@ -81,7 +83,7 @@ for i in range(NUM_QUESTIONS):
 quiz_df = pd.DataFrame(rows)
 quiz_df.to_csv("biology_quiz.csv", index=False)
 print("Quiz CSV saved as biology_quiz.csv")
-
+'''
 
 '''
 ### code using GPT-j to generate multiple choice questions but it is not working
